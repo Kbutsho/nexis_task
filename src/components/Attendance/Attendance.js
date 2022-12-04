@@ -63,7 +63,7 @@ const Attendance = () => {
                                 )
                             }
                         </table>
-                        : <p>item found {Object.values(data).length}</p>
+                        : <p>Loading......item found {Object.values(data).length}</p>
             }
         </div>
     );
