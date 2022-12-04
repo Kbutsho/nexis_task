@@ -27,16 +27,21 @@ const Attendance = () => {
             <img src={logo} alt="" style={{ width: "200px" }} />
             <div className='p-2 h4 my-5  text-center' >
                 <span className=' py-3 px-4 text-white' style={{ background: "#3B8BEA", borderRadius: "5px" }}>Attendance Information</span>
+              
             </div>
+            <p className='fw-bold text-center' style={{ color: "red" }}>(when you refresh the page, the data in this table will change each time)</p>
             {
                 error ?
                     <div className='d-flex justify-content-center align-items-center' style={{ height: "55vh" }}>
                         <div className='text-center'>
                             <h5 className='fw-bold' style={{ color: "red" }}>{error}</h5>
                             <Link className='btn btn-primary fw-bold' to="/login"> Login first<BiChevronsRight size="30" /></Link>
+                            
                         </div>
                     </div>
                     : Object.values(data).length > 0 ?
+                        <div>
+                        
                         <table className='table'>
                             <thead className="text-center text-dark">
                                 <tr>
@@ -61,7 +66,8 @@ const Attendance = () => {
                                 )
                             }
                         </table>
-                        : <div className='d-flex justify-content-center align-items-center' style={{ height: "100%" }}><h2 className='fw-bold text-danger'>Loading.......</h2></div>
+                        </div>
+                        : <div className='d-flex justify-content-center align-items-center' style={{ height: "100%" }}><h2 className='fw-bold text-danger'>Loading new data.......</h2></div>
             }
         </div>
     );
