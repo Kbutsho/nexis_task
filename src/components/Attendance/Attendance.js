@@ -27,8 +27,8 @@ const Attendance = () => {
     return (
         <div className='container my-5'>
             <img src={logo} alt="" style={{ width: "200px" }} />
-            <div className='p-2 h3 my-5  text-center' >
-                <span className=' py-3 px-5 text-white' style={{ background: "#3B8BEA", borderRadius: "5px" }}>Attendance Information</span>
+            <div className='p-2 h4 my-5  text-center' >
+                <span className=' py-3 px-4 text-white' style={{ background: "#3B8BEA", borderRadius: "5px" }}>Attendance Information</span>
             </div>
             {
                 error ?
