@@ -59,7 +59,7 @@ const Login = () => {
               <input type="email" name="email" onChange={handelChange} value={login.email} placeholder="Write Email Address" />
             </div>
             <div className="mb-3">
-              <input type="text" name="password" onChange={handelChange} value={login.password} placeholder="Write password" />
+              <input type="password" name="password" onChange={handelChange} value={login.password} placeholder="Write password" />
               <small>your password must be 8 character</small>
             </div>
             <div className="mb-3">
