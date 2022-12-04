@@ -39,8 +39,8 @@ const Attendance = () => {
                         </div>
                     </div>
                     : Object.values(data).length > 0 ?
-                        <table className='stripe hover table'>
-                            <thead className="text-center bg-dark text-white">
+                        <table className='table'>
+                            <thead className="text-center text-dark">
                                 <tr>
                                     <th>Date</th>
                                     <th>Employee Name</th>
