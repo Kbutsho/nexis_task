@@ -28,14 +28,11 @@ const Signup = () => {
             password: signup.password
         };
         axios.post(`https://test.nexisltd.com/signup`, data).then(response => {
-            //   localStorage.setItem('access_token', response.data.access_token)
-            //   localStorage.setItem('refresh_token', response.data.refresh_token);
             swal("Success", "signup successful!", "success");
             history.push('/login');
 
         })
             .catch((err) => {
-                // setSignUp({ ...signup, error: err.response.data.error });
                 swal("Warning", err.response.data.error, "error");
             })
     }

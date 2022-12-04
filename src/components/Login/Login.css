@@ -25,7 +25,6 @@ input{
     border-bottom: 1px solid gray;
     outline: none;
 }
-
 @media screen and (max-width: 700px) {
     .image-area{
         width: 0%;

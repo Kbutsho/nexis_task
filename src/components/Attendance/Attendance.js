@@ -14,11 +14,9 @@ const Attendance = () => {
             headers: {
                 'Authorization': 'Bearer ' + access_token
             }
-        })
-            .then(response => {
+        }).then(response => {
                 setData(response.data)
-            })
-            .catch((err) => {
+            }).catch((err) => {
                 setError(err.response.data.error);
                 swal("Warning", err.response.data.error, "error");
             })
