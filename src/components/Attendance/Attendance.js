@@ -32,7 +32,7 @@ const Attendance = () => {
             </div>
             {
                 error ?
-                    <div className='d-flex justify-content-center align-items-center' style={{ height: "100vh" }}>
+                    <div className='d-flex justify-content-center align-items-center' style={{ height: "55vh" }}>
                         <div className='text-center'>
                             <h5 className='fw-bold' style={{ color: "red" }}>{error}</h5>
                             <Link className='btn btn-primary fw-bold' to="/login"> Login first<BiChevronsRight size="30" /></Link>
@@ -63,7 +63,7 @@ const Attendance = () => {
                                 )
                             }
                         </table>
-                        : <p>Loading......item found {Object.values(data).length}</p>
+                        : <div className='d-flex justify-content-center align-items-center' style={{ height: "100%" }}><h2 className='fw-bold text-danger'>Loading.......</h2></div>
             }
         </div>
     );
